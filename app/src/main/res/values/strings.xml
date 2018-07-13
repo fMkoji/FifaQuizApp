@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="questionOne">"1.  Who is FIFA World Cup all time scorer?"</string>
+
+    <string name="questionTwo">2.   Which of the following African countries have \never reached Quater finals in the World Cup?</string>
+    <string name="questionThree">3.    Which two countries have reached World Cup \nfinals the most number of times?</string>
+    <string name="questionFour">4.    Where was the first FIFA World Cup held?</string>
+    <string name="questionFive">5.    In what year did FIFA World Cup begin?</string>
+<string name="EditTextHint">Please type your answer</string>
+    <string name="y1908">1908</string>
+    <string name="y1930">1930</string>
+    <string name="y1950">1950</string>
+    <string name="y1926">1926</string>
+    <string name="nigeria">Nigeria</string>
+    <string name="senegal">Senegal</string>
+    <string name="cameroon">Cameroon</string>
+    <string name="algeria">Algeria</string>
+    <string name="ghana">Ghana</string>
+    <string name="toast_messageForBelow3pts">Please try again, you score </string>
+    <string name="toast_messageForAbove3pts">Congratulations, you score </string>
+<string name="cristiano">Cristiano Ronaldo</string>
+<string name="ronaldo">Ronaldo Luís Nazário</string>
+<string name="klose">Miroslav Klose</string>
+<string name="messi">Lionel Messi</string>
+</resources>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="serif-monospace"
+            android:paddingBottom="16dp"
+            android:text="Fifa World Cup Quiz."
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/questionOne"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/Messi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="questionOneUserAns"
+                android:text="Lionel Messi " />
+
+            <RadioButton
+                android:id="@+id/Klose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="questionOneUserAns"
+                android:text="@string/klose" />
+
+            <RadioButton
+                android:id="@+id/Cristiano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="questionOneUserAns"
+                android:text="@string/cristiano" />
+
+            <RadioButton
+                android:id="@+id/Ronaldo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="questionOneUserAns"
+                android:text="@string/ronaldo" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/questionTwo"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_nigeria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:onClick="questionFourUserAns"
+            android:text="@string/nigeria" />
+
+        <CheckBox
+            android:id="@+id/checkbox_senegal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:onClick="questionFourUserAns"
+            android:text="@string/senegal" />
+
+        <CheckBox
+            android:id="@+id/checkbox_cameroon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:onClick="questionFourUserAns"
+            android:text="@string/cameroon" />
+
+        <CheckBox
+            android:id="@+id/checkbox_algeria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:onClick="questionFourUserAns"
+            android:text="@string/algeria" />
+
+        <CheckBox
+            android:id="@+id/checkbox_ghana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:onClick="questionFourUserAns"
+            android:text="@string/ghana" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/questionThree"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/BraIta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="questionThreeUserAns"
+                android:text="Brazil/Italy" />
+
+            <RadioButton
+                android:id="@+id/SpaBra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="questionThreeUserAns"
+                android:text="Spain/Brazil" />
+
+            <RadioButton
+                android:id="@+id/GerBra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="questionThreeUserAns"
+                android:text="Germany/Brazil" />
+
+            <RadioButton
+                android:id="@+id/ItaGer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="questionThreeUserAns"
+                android:text="Italy/Germany" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/questionFour"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/questionFour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:hint="@string/EditTextHint"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/questionFive"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/y1908"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="questionFiveUserAns"
+                android:text="@string/y1908" />
+
+            <RadioButton
+                android:id="@+id/y1930"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="questionFiveUserAns"
+                android:text="@string/y1930" />
+
+            <RadioButton
+                android:id="@+id/y1950"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="questionFiveUserAns"
+                android:text="@string/y1950" />
+
+            <RadioButton
+                android:id="@+id/y1926"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="questionFiveUserAns"
+                android:text="@string/y1926" />
+
+        </RadioGroup>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"
+            android:onClick="submitResults"
+            android:text="Submit"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+</ScrollView>
