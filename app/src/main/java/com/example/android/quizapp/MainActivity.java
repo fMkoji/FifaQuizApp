@@ -90,9 +90,9 @@ public class MainActivity extends AppCompatActivity {
         answerChoice4 = question2choice4.isChecked();
         answerChoice5 = question2choice5.isChecked();
 
-        if (question2choice2.isChecked() && question2choice3.isChecked() && question2choice5.isChecked()) {
+        if (question2choice2.isChecked() && question2choice3.isChecked() && question2choice5.isChecked()&& !question2choice1.isChecked()&& !question2choice4.isChecked()) {
             answerTwoScore = 1;
-        } else if (question2choice1.isChecked() || question2choice5.isChecked()) {
+        } else {
             answerTwoScore = 0;
         }
     }
