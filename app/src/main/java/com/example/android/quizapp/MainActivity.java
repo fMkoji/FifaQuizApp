@@ -17,6 +17,15 @@ public class MainActivity extends AppCompatActivity {
     int answerOneScore, answerTwoScore, answerThreeScore, answerFourScore, answerFiveScore;
     int totalScore;
 
+    /**
+     * These are boolean variables for Question Two
+     */
+    boolean answerChoice1;
+    boolean answerChoice2;
+    boolean answerChoice3;
+    boolean answerChoice4;
+    boolean answerChoice5;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
      * This method is for doing a summary of all scores and display the answer in a toast message
      * once the submit button is clicked
      **/
+
     public void submitResults(View view) {
 
         questionFourUserAns(view);
@@ -72,12 +82,6 @@ public class MainActivity extends AppCompatActivity {
      */
     public void questionTwoUserAns() {
 
-        boolean answerChoice1;
-        boolean answerChoice2;
-        boolean answerChoice3;
-        boolean answerChoice4;
-        boolean answerChoice5;
-
         CheckBox question2choice1 = (CheckBox) this.findViewById(R.id.checkbox_nigeria);
         CheckBox question2choice2 = (CheckBox) this.findViewById(R.id.checkbox_senegal);
         CheckBox question2choice3 = (CheckBox) this.findViewById(R.id.checkbox_cameroon);
@@ -90,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
         answerChoice4 = question2choice4.isChecked();
         answerChoice5 = question2choice5.isChecked();
 
-        if (question2choice2.isChecked() && question2choice3.isChecked() && question2choice5.isChecked()&& !question2choice1.isChecked()&& !question2choice4.isChecked()) {
+        if (answerChoice2 && answerChoice3&& answerChoice5&& !answerChoice1&& !answerChoice4) {
             answerTwoScore = 1;
         } else {
             answerTwoScore = 0;
